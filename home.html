@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Projeto</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1>Portifólio do Projeto</h1>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <img src="imagens/button-menu.png">
+        </button>
+            <div class="menu" id="menu">
+                <nav class="inicio">
+                <a href="home.html">Início</a>
+                </nav>
+                <nav class="quem-somos">
+                <a href="quemsomos.html">Quem Somos</a>
+                </nav>
+                <nav class="tema">
+                <a href="tema.html">Tema do Projeto</a>
+                </nav>
+                <nav class="comunidade">
+                <a href="comunidade.html">Comunidade</a>
+                </nav>
+            </div>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao nosso Projeto</h2>
+            <a href="Assets/Name It documento de visão (1).docx" download>Baixar Documento de Visão</a>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Name It!. Todos os direitos reservados.</p>
+        <img src="imagens/unifil.svg" alt="Logo UniFil" class="logo">
+    </footer>
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('menu');
+        const button = document.querySelector('.menu-btn');
+
+        if (
+        menu.style.display === 'block' &&
+        !menu.contains(event.target) &&
+        !button.contains(event.target)
+        ) {
+        menu.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>
