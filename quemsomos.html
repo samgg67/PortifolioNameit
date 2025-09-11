@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" href="quemsomos.css">
+</head>
+    <body>
+        <header>
+            <h1>Quem Somos</h1>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <img src="imagens/button-menu.png">
+            </button>
+            <div class="menu" id="menu">
+                <nav class="inicio">
+                <a href="index.html">Início</a>
+                </nav>
+                <nav class="quem-somos">
+                <a href="quemsomos.html">Quem Somos</a>
+                </nav>
+                <nav class="tema">
+                <a href="tema.html">Tema do Projeto</a>
+                </nav>
+                <nav class="comunidade">
+                <a href="comunidade.html">Comunidade</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="quem-somos">
+                <h2>Nossa Equipe</h2>
+                <div class="integrante1">
+                    <img src="imagens/ana.jpg" alt="Ana Gamberini">
+                    <p><strong>Nome:</strong> Ana Gamberini<br><strong>Curso:</strong> Engenharia de Software <br><strong>GitHub:</strong> <a href="https://github.com/anaclaragamberini">https://github.com/anaclaragamberini</a></p>
+                </div>
+                <div class="integrante2">
+                    <img src="imagens/maria.jpg" alt="Foto do integrante">
+                    <p><strong>Nome:</strong> Maria Vitória<br><strong>Curso:</strong> Engenharia de Software<br><strong>GitHub:</strong> <a href="https://github.com/MVitoriahub">https://github.com/MVitoriahub</a></p>
+                </div>
+                <div class="integrante3">
+                    <img src="imagens/giovana.jpg" alt="Foto do integrante">
+                    <p><strong>Nome:</strong> Giovana Nascimento<br><strong>Curso:</strong> Engenharia de Software<br><strong>GitHub:</strong> <a href="https://github.com/Giovana-me">https://github.com/Giovana-me</a></p>
+                </div>
+                <div class="integrante4">
+                    <img src="imagens/samuel.jpg" alt="Foto do integrante">
+                    <p><strong>Nome:</strong> Samuel Silva<br><strong>Curso:</strong> Engenharia de Software<br><strong>GitHub:</strong> <a href="https://github.com/samgg67">https://github.com/samgg67</a></p>
+                </div>
+                <div class="integrante5">
+                    <img src="imagens/pedro.png" alt="Foto do integrante">
+                    <p><strong>Nome:</strong> Pedro Rafael<br><strong>Curso:</strong> Engenharia de Software<br><strong>GitHub:</strong> <a href="https://github.com/ScriptPedro   ">https://github.com/ScriptPedro</a></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Name It!. Todos os direitos reservados.</p>
+            <img src="imagens/unifil.svg" alt="Logo UniFil" class="logo">
+        </footer>
+        <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        }
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menu');
+            const button = document.querySelector('.menu-btn');
+
+            if (
+            menu.style.display === 'block' &&
+            !menu.contains(event.target) &&
+            !button.contains(event.target)
+            ) {
+            menu.style.display = 'none';
+            }
+        });
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background:#FFE4AA;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+h1{
+    margin-left: 10%;
+}
+
+.menu-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-left: 50%;
+}
+
+.menu-btn img{
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 80px; 
+    left: 85%; 
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    z-index: 9999; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.menu a {
+    display: block;
+    color: #000000;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.inicio a:hover {
+    color: #FCA699;
+}
+
+.quem-somos a:hover {
+    color: #E2869B;
+}
+.tema a:hover {
+    color: #C9729F;
+}
+.comunidade a:hover {
+    color: #583B7E;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background: white; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #583B7E;
+    margin-bottom: 20px;
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    font-size: 18px;
+    line-height: 2;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+footer .logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+

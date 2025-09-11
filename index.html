@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Projeto</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Portfólio do Projeto</h1>
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Menu">
+            <img src="imagens/button-menu.png" alt="Abrir menu">
+        </button>
+        <div class="menu" id="menu">
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="quemsomos.html">Quem Somos</a>
+                <a href="tema.html">Tema do Projeto</a>
+                <a href="comunidade.html">Comunidade</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao nosso Projeto</h2>
+        </section>
+
+        <section id="vision">
+            <h2>1° Entrega - Documento de Visão</h2>
+            <p>O Documento de Visão é um artefato utilizado em projetos de software para definir e comunicar claramente os objetivos, escopo, funcionalidades e requisitos gerais do sistema que será desenvolvido.</p>
+            <a class="botao-download" href="Assets/Name It documento de visão (1).docx" download>Baixar Documento de Visão</a>
+        </section>
+
+        <section id="MVP">
+
+            <h2>2° MVP e Caso de Uso/Diagrama de classe</h2>
+            <p>O MVP (Minimum Viable Product) é a versão mais simples e funcional de um produto, criada com o mínimo de recursos necessários para atender à principal necessidade dos usuários e permitir validação da ideia com o público real.</p>
+            <p>Os Casos de Uso descrevem, de forma estruturada, como o usuário interage com o sistema para atingir um objetivo específico. São utilizados na análise de requisitos para entender o comportamento funcional do sistema.</p>
+            <a class="botao-download" href="https://www.figma.com/design/TXoJAl7KAGpmxtBvtXGLSr/NameIt?node-id=1-8459&t=Vxs5YPf0BTN12r1z-1&authuser=0" target="_blank">Protótipo</a>
+            <a class="botao-download" href="Assets/Use Case.asta" download>Baixar Casos de Uso</a>
+            <a class="botao-download" href="Assets/Class Diagram(1).asta" download>Diagrama de Classe</a>
+            <a class="botao-download" href="Assets/Business Model Canvas.png" download>Business Model Canvas</a>
+        </section>
+
+        <section id="der">
+            <h2>3° DER + Workflow</h2>
+            <p>O DER é uma representação visual da estrutura lógica de um banco de dados. Ele mostra como as entidades (como "Cliente", "Pedido", "Produto") se relacionam entre si e quais são seus atributos (como nome, data, valor). É amplamente utilizado na fase de modelagem de dados para garantir que o sistema reflita corretamente as necessidades do negócio.</p>
+            <p>Workflow (fluxo de trabalho) é a definição e automação da sequência de tarefas, atividades ou processos de um sistema ou organização. Ele descreve como as tarefas fluem, quem são os responsáveis, quais são os passos, e quais são as condições de decisão envolvidas.</p>
+            <a class="botao-download" href="Assets/DER - NAME IT.asta" download>DER - NameIt</a>
+            <a class="botao-download" href="https://whimsical.com/fluxograma-do-usuario-pi-9Uu7CxKeDp5bg4MA5282vf" target="_blank">Fluxograma de Usuário</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Name It! Todos os direitos reservados.</p>
+        <img src="imagens/unifil.svg" alt="Logo UniFil" class="logo">
+    </footer>
+
+    <script>
+    function toggleMenu() {
+        const menu = document.getElementById('menu');
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('menu');
+        const button = document.querySelector('.menu-btn');
+        if (menu.style.display === 'block' && !menu.contains(event.target) && !button.contains(event.target)) {
+            menu.style.display = 'none';
+        }
+    });
+    </script>
+</body>
+</html>
