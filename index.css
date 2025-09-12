@@ -4,9 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: black;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* ocupa a tela toda */
 }
 
 header {
@@ -62,11 +60,11 @@ h1 {
 }
 
 main {
-    flex: 1;
     padding: 40px 10%;
     background: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 10% 40px 10%;
 }
 
 h2 {

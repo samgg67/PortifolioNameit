@@ -34,7 +34,6 @@
         </section>
 
         <section id="MVP">
-
             <h2>2° MVP e Caso de Uso/Diagrama de classe</h2>
             <p>O MVP (Minimum Viable Product) é a versão mais simples e funcional de um produto, criada com o mínimo de recursos necessários para atender à principal necessidade dos usuários e permitir validação da ideia com o público real.</p>
             <p>Os Casos de Uso descrevem, de forma estruturada, como o usuário interage com o sistema para atingir um objetivo específico. São utilizados na análise de requisitos para entender o comportamento funcional do sistema.</p>
@@ -45,22 +44,20 @@
 
         <section id="der">
             <h2>3° Diagrama de classes + Workflow</h2>
-            <p>O Digrama de classes é uma representação visual da estrutura lógica de um banco de dados. Ele mostra como as entidades (como "Cliente", "Pedido", "Produto") se relacionam entre si e quais são seus atributos (como nome, data, valor). É amplamente utilizado na fase de modelagem de dados para garantir que o sistema reflita corretamente as necessidades do negócio.</p>
-            <p>Workflow (fluxo de trabalho) é a definição e automação da sequência de tarefas, atividades ou processos de um sistema ou organização. Ele descreve como as tarefas fluem, quem são os responsáveis, quais são os passos, e quais são as condições de decisão envolvidas.</p>
+            <p>O Diagrama de classes é uma representação visual da estrutura lógica de um banco de dados. Ele mostra como as entidades (como "Cliente", "Pedido", "Produto") se relacionam entre si e quais são seus atributos. É amplamente utilizado na fase de modelagem de dados.</p>
+            <p>Workflow (fluxo de trabalho) é a definição e automação da sequência de tarefas, atividades ou processos de um sistema ou organização.</p>
             <a class="botao-download" href="Assets/Class Diagram(1).asta" download>Diagrama de classes - NameIt</a>
             <a class="botao-download" href="Assets/Fluxograma do Usuário - PI-1.pdf" target="_blank">Fluxograma de Usuário</a>
         </section>
-    </main>
 
-     <section id="Vídeo">
+        <section id="Vídeo">
             <h2>4° Vídeo e Slides - NameIt</h2>
             <p>Vídeo com breve explicação do tema, apresentação dos diagramas e artefatos do projeto, além da demonstração do aplicativo em funcionamento, destacando suas principais funcionalidades como jogo educativo e interativo para crianças.</p>
-            <p>Slides com uma breve apresentação so projeto NameIt</p>
-            <a class="botao-download" href="https://youtu.be/9Pg5Ju5As1g" download>Vídeo - NameIt</a>
+            <p>Slides com uma breve apresentação do projeto NameIt.</p>
+            <a class="botao-download" href="https://youtu.be/9Pg5Ju5As1g" target="_blank">Vídeo - NameIt</a>
             <a class="botao-download" href="Assets/SLIDES NAME IT.pdf" target="_blank">Slides NameIt</a>
         </section>
     </main>
-
 
     <footer>
         <p>&copy; 2025 Name It! Todos os direitos reservados.</p>
@@ -68,18 +65,18 @@
     </footer>
 
     <script>
-    function toggleMenu() {
-        const menu = document.getElementById('menu');
-        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-    }
-
-    document.addEventListener('click', function(event) {
-        const menu = document.getElementById('menu');
-        const button = document.querySelector('.menu-btn');
-        if (menu.style.display === 'block' && !menu.contains(event.target) && !button.contains(event.target)) {
-            menu.style.display = 'none';
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
         }
-    });
+
+        document.addEventListener('click', function(event) {
+            const menu = document.getElementById('menu');
+            const button = document.querySelector('.menu-btn');
+            if (menu.style.display === 'block' && !menu.contains(event.target) && !button.contains(event.target)) {
+                menu.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
